@@ -59,7 +59,7 @@
   height: 50px;
   width: 50px;
   background-color: #FF0000;
-  background-image: url('JPG/offtgl.JPG');
+  background-image: url('offtgl.JPG');
   background-size: cover;
   transition: 1s;
   position: relative;
@@ -73,7 +73,7 @@
   width: 50px;
   transition: 1s;
   background-color: #FF0000;
-  background-image: url('JPG/onntgl.JPG');
+  background-image: url('onntgl.JPG');
   background-size: cover;
   position: relative;
   border-radius: 10px;
@@ -127,7 +127,7 @@
 
 .lbox{
   
-  background-image: url('JPG/drive.JPG');
+  background-image: url('drive.JPG');
   background-size: cover;
 }
 
@@ -221,7 +221,7 @@
 
 
 .tlogo1{
-  background-image: url('JPG/tgram.JPG');
+  background-image: url('tgram.JPG');
   background-size: cover;
   background-color: #00FF26;
   border-radius: 15px;
@@ -232,7 +232,7 @@
 .tlogo2{
   
   
-  background-image: url('JPG/igram.JPG');
+  background-image: url('igram.JPG');
   background-size: cover;
   border-radius: 15px;
   background-color: #00FF4F;
@@ -243,7 +243,7 @@
 
 .tlogo3{
   
-  background-image: url('JPG/lding.JPG');
+  background-image: url('lding.JPG');
   background-size: cover;
   background-color: #00FF4F;
   position: ;
@@ -253,7 +253,7 @@
 
 .tlogo4{
   
-  background-image: url('JPG/fbook.JPG');
+  background-image: url('fbook.JPG');
   background-size: cover;
   background-color: #00FF4F;
   position: ;
