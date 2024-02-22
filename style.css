@@ -1,5 +1,13 @@
 
-
+:root{
+  
+  --f-color: #171717;
+  --s-color: #4D4D4D;
+  --t-color: #232323;
+  
+  
+  --g-color: 45deg, #FFFFFF, #2EFFF5;
+}
 
 
 
@@ -15,18 +23,21 @@
 .header{
   height: 10vh;
   width: 100vw ;
-  background-color: #474747;
+  background: var(--f-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid #00FFD9;
+  border-bottom: 1px solid #00F2FF;
 }
 
 .logo{
-  height: 75%;
-  width: 25%;
+  height: 40px;
+  background-image: url('logo.JPG');
+  background-size: cover;
+  width: 80px;
   background-color: #0015FF;
   position: relative;
+  box-shadow: 0.5px 0.5px 5px #2EFFF5;
   border-radius: 10px;
 }
 
@@ -46,8 +57,10 @@
   height: 100%;
   width: 75%;
   background-color: transparent;
+  color: #60FDFF;
   position: relative;
   border-radius: 20px;
+  text-shadow: 1px 1px 10px #FFFFFF;
   display: flex;
   align-items: center;
   font-size: 50%;
@@ -56,8 +69,8 @@
 }
 
 .offtoggle{
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   background-color: #FF0000;
   background-image: url('offtgl.JPG');
   background-size: cover;
@@ -69,8 +82,8 @@
 
 
 .ontoggle{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   transition: 1s;
   background-color: #FF0000;
   background-image: url('onntgl.JPG');
@@ -84,7 +97,7 @@
 .body{
   height: 90vh;
   width: 100vw;
-  background-color: #3C3C3C;
+  background: var(--t-color);
   position: absolute;
   overflow: hidden;
 }
@@ -115,14 +128,14 @@
   background-color: #FF00BF;
   border-radius: 15px;
   transition: 1s;
-  border: 0.5px solid;
+  border: 0.5px solid #00BFFF;
+  box-shadow: inset 3px 3px 10px #60EAFF,inset -3px -3px 10px #60EAFF;
 }
 
 .lbox:hover{
   height: 55px;
   width: 55px;
-  box-shadow: 3px 3px 10px #F4FFEF,
-     -3px -3px 10px #99FFF7;
+  box-shadow: 3px 3px 10px #F4FFEF, -3px -3px 10px #00FFEB;
 }
 
 .lbox{
@@ -154,7 +167,7 @@
 .mlink{
   height: 45px;
   width: 80%;
-  background: linear-gradient( 45deg, #68FFFA, #FF19E1);
+  background: linear-gradient( var(--g-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +176,7 @@
   transition: 1s;
   transform: translate(130%);
   border: 0.5px solid;
-  box-shadow: 3px 3px 10px #D05DFF;
+  box-shadow: 3px 3px 10px #99EEFF;
 }
 
 .show_mlink1{
@@ -217,6 +230,7 @@
   height: 50px;
   width: 50px;
   box-shadow: #ACE0FF;
+  box-shadow: inset 3px 3px 10px #FFFFFF,inset -3px -3px 10px #FF02E3;
 }
 
 
@@ -302,15 +316,17 @@
   animation: op 2s;
   transition: 1s;
   box-shadow: 3px 3px 10px #5CACFF;
-  background: linear-gradient(45deg,#6FFEFF,#FF86E1);
+  background: linear-gradient(var(--g-color));
 
 }
 
 
 .a{
   text-decoration: none;
-  color: #784200;
+  color: #FFFFFF;
+  text-shadow: #000000 1px 1px 5px;
   font-size: 20px;
+  border-radius: 20px;
   font-weight: bold;
   animation: to 2s;
 }
