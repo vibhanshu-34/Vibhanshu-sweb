@@ -6,7 +6,7 @@
   --t-color: #232323;
   
   
-  --g-color: 45deg, #FFFFFF, #2EFFF5;
+  --g-color: 45deg, #7FEEFF, #D786FF;
 }
 
 
@@ -97,7 +97,7 @@
 .body{
   height: 90vh;
   width: 100vw;
-  background: #2B7EFF;
+  background: var(--s-color);
   position: absolute;
   overflow: hidden;
 }
@@ -323,8 +323,8 @@
 
 .a{
   text-decoration: none;
-  color: #FFFFFF;
-  text-shadow: #000000 1px 1px 5px;
+  color: #82F9FF;
+  text-shadow: #000000 3px 3px 2px;
   font-size: 20px;
   border-radius: 20px;
   font-weight: bold;

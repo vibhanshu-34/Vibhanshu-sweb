@@ -73,14 +73,18 @@ lbox1.addEventListener("click",function () {
 
 lbox2.addEventListener("click",function () {
   
+  
   mlink2.classList.toggle('show_mlink2');
+  
   
 });
 
 
 lbox3.addEventListener("click",function () {
   
+
   mlink3.classList.toggle('show_mlink3');
+
   
 });
 
@@ -88,12 +92,14 @@ lbox3.addEventListener("click",function () {
 
 lbox4.addEventListener("click",function () {
   
+  
   mlink4.classList.toggle('show_mlink4');
   
 });
 
 
 lbox5.addEventListener("click",function () {
+  
   
   mlink5.classList.toggle('show_mlink5');
   
