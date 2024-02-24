@@ -97,7 +97,7 @@
 .body{
   height: 90vh;
   width: 100vw;
-  background: var(--t-color);
+  background: #84FF93;
   position: absolute;
   overflow: hidden;
 }
