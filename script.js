@@ -3,6 +3,8 @@ const sidebar = document.getElementById('toggleoptn');
 const tlogo = document.getElementById('togglelogos');
 const options = document.getElementById('options');
 const mainbox = document.getElementById('mainbox');
+const footer = document.getElementById('footer');
+const homebtn = document.getElementById('home');
 
 
 
@@ -12,6 +14,8 @@ const lbox2 = document.getElementById('lbox2');
 const lbox3 = document.getElementById('lbox3');
 const lbox4 = document.getElementById('lbox4');
 const lbox5 = document.getElementById('lbox5');
+
+const guide = document.getElementById('guide');
 //.        main buttons. 👆👆
 
 
@@ -33,40 +37,90 @@ const mlink5 = document.getElementById('mlink5');
 
 
 
+//.         info box.     👇👇
+
+const g1 = document.getElementById('g1');
+const g2 = document.getElementById('g2');
+const g3 = document.getElementById('g3');
+const g4 = document.getElementById('g4');
+const g5 = document.getElementById('g5');
+
+//.         info box.     👆👆
+
+
+//.        landing page.        👇👇
+
+const landingpgt = document.getElementById('landingpgt');
+const landingpgb = document.getElementById('landingpgb');
+const ldnpBtn = document.getElementById('ldnpg_off');
+
+
+ldnpg_off.addEventListener("click",function () {
+  
+  landingpgt.classList.toggle('hide_landingpgt');
+  landingpgb.classList.toggle('hide_landingpgb');
+    
+});
+
+
+//.        landing page.        👆👆
+
+
 togglebtn.addEventListener("click",function () {
   
   if (togglebtn.className === "offtoggle") 
   {
     togglebtn.className = "ontoggle";
-    
-    options.style.display = '';
-    mainbox.style.display = ''
-    
   
   } 
   else 
   {
     togglebtn.className = "offtoggle";
-    options.style.display = '';
-    mainbox.style.display = '';
     ;
   }
   sidebar.classList.toggle('show_toggleoptn');
   tlogo.classList.toggle('togglelogos_show');
   options.classList.toggle('show_option')
   mainbox.classList.toggle('show_mainbox')
+  guide.classList.toggle('hide_guide');
+  footer.classList.toggle('show_footer')
+  
+
+  
+
+});
+
+
+
+homebtn.addEventListener("click",function () {
+  
+  landingpgt.classList.remove('hide_landingpgt');
+  landingpgb.classList.remove('hide_landingpgb');
+  sidebar.classList.toggle('show_toggleoptn');
+  tlogo.classList.toggle('togglelogos_show');
+  options.classList.toggle('show_option')
+  mainbox.classList.toggle('show_mainbox')
+  guide.classList.toggle('hide_guide');
+  footer.classList.toggle('show_footer')
+  togglebtn.className = "offtoggle";
   
   
+    ;
  
-   
- });
+  
+ 
+});
  
  
- //.        main button functions 👇👇👇
+ 
+ 
+ //.        main button functions 👇
 
 lbox1.addEventListener("click",function () {
   
   mlink1.classList.toggle('show_mlink1');
+  g1.classList.toggle('hide_g1');
+
   
 });
 
@@ -75,6 +129,7 @@ lbox2.addEventListener("click",function () {
   
   
   mlink2.classList.toggle('show_mlink2');
+  g2.classList.toggle('hide_g2');
   
   
 });
@@ -84,6 +139,7 @@ lbox3.addEventListener("click",function () {
   
 
   mlink3.classList.toggle('show_mlink3');
+  g3.classList.toggle('hide_g3');
 
   
 });
@@ -94,6 +150,7 @@ lbox4.addEventListener("click",function () {
   
   
   mlink4.classList.toggle('show_mlink4');
+  g4.classList.toggle('hide_g4');
   
 });
 
@@ -102,6 +159,7 @@ lbox5.addEventListener("click",function () {
   
   
   mlink5.classList.toggle('show_mlink5');
+  g5.classList.toggle('hide_g5');
   
 });
 

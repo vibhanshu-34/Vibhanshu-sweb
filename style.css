@@ -9,6 +9,9 @@
   --g-color: 45deg, #7FEEFF, #D786FF;
 }
 
+body{
+  overflow: hidden;
+}
 
 
 
@@ -94,7 +97,6 @@
   border: solid #FF0000 1px;
 }
 /*           body.              */
-
 .body{
   height: 90vh;
   width: 100vw;
@@ -102,7 +104,6 @@
   position: absolute;
   overflow: hidden;
 }
-
 
 .options{
   height: 100%;
@@ -121,7 +122,6 @@
 .show_option{
   transform: translate(-100%);
 }
-
 
 .lbox{
   height: 50px;
@@ -150,7 +150,7 @@
   width: 75%;
   margin-left: 25%;
   position: ;
-  z-index: 1;
+  z-index: 2;
   background-color: transparent;
   display: flex;
   position: absolute;
@@ -200,9 +200,8 @@
   transform: translate(0%);
 }
 
-
 .togglelogos{
-  z-index: 3;
+  z-index: 100;
   height: 65%;
   width: 20%;
   margin-left: 80%;
@@ -221,19 +220,12 @@
   transform: translate(0%);
 }
 
-
-
-
-
-
-
 .tlogo{
   height: 50px;
   width: 50px;
   box-shadow: #ACE0FF;
   box-shadow: inset 3px 3px 10px #FFFFFF,inset -3px -3px 10px #FF02E3;
 }
-
 
 .tlogo1{
   background-image: url('tgram.JPG');
@@ -255,7 +247,6 @@
   transition: 1s;
 }
 
-
 .tlogo3{
   
   background-image: url('lding.JPG');
@@ -276,7 +267,6 @@
   transition: 1s;
 }
 
-
 .toggleoptn{
   height: 65%;
   width: 60%;
@@ -285,7 +275,7 @@
   margin-bottom: 35%;
   background-color: transparent;
   position: absolute;
-  z-index: 3;
+  z-index: 100;
   display: flex;
   overflow: hidden;
   transform: translate(150% ,0%);
@@ -301,13 +291,13 @@
   transform: translate(0% ,0%);
 }
 
-
 .comn{
   height: 45px;
   width: 90%;
   background-color: #00FFD9;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  border: 0.5px solid;
   position:;
   transform: translate();
   transition: 1s;
@@ -321,7 +311,6 @@
 
 }
 
-
 .a{
   text-decoration: none;
   color: #82F9FF;
@@ -332,3 +321,171 @@
   animation: to 2s;
 }
 
+
+
+.guide{
+  height: 100%;
+  width: 75%;
+  margin-left: 25%;
+  position:;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translate(0%);
+  transition: transform 1s;
+}
+.hide_guide{
+  transform: translate(100%);
+}
+
+.info{
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  animation: info 3s linear infinite;
+}
+
+@keyframes info {
+  25%{
+    color: #6AFFAA;
+    margin-right: 2%
+  }
+  
+  50%{
+    color: #79FFD5;
+    margin-right: 0%
+  }
+  
+  75%{
+    color: #75C1FF;
+    margin-right: -2%
+  }
+  100%{
+    color: #DE93FF;
+    margin-right: 0%
+  }
+}
+
+
+
+.hide_g1{
+  transform: translate(100%);
+  transition: 1s;
+}
+
+.hide_g2{
+  transform: translate(100%);
+  transition: 1s;
+}
+
+
+.hide_g3{
+  transform: translate(100%);
+  transition: 1s;
+}
+
+
+.hide_g4{
+  transform: translate(100%);
+  transition: 1s;
+}
+
+
+.hide_g5{
+  transform: translate(100%);
+  transition: 1s;
+}
+
+
+/*            Landing page.           */
+
+.landingpgt{
+  height: 50%;
+  width: 100%;
+  transform: translate(0%,0%);
+  transition: transform 1s;
+  background: #FF0077;
+  position: relative;
+  z-index: 4;
+}
+
+.hide_landingpgt{
+  transform: translate(0%,-100%);
+}
+
+.show_landingpgt{
+  transform: translate(0%,0%);
+}
+
+
+
+
+
+.landingpgb{
+  height: 50%;
+  width: 100%;
+  margin-top: ;
+  background: #0BFF04;
+  position: absolute;
+  z-index: 4;
+  transform: translate(0%,0%);
+  transition: transform 1s;
+}
+
+.hide_landingpgb{
+  transform: translate(0%,100%);
+}
+
+.show_landingpgb {
+  transform: translate(0%, 0%);
+}
+
+.ldnpg_off{
+  height: 50px;
+  width: 50px;
+  background: #37F1FF;
+  border-radius: 15px;
+}
+
+.footer{
+  height: 20vh;
+  width: 100vw;
+  margin-top: 69.1vh;
+  background: #000000;
+  z-index: 100;
+  position: absolute;
+  border-top: 2px solid #08FFF5;
+  border-bottom: 2px solid #08FFF5;
+  transform: translate(0%,100%);
+  transition: transform 1s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.show_footer{
+  transform: translate(0%,0%);
+}
+
+.ftr{
+  height: 50px;
+  width: 50px;
+  background: yellow;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ftr_box1{
+  background-image: url('home.JPG');
+  background-size: cover;
+}
