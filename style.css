@@ -59,10 +59,11 @@
   background-color: transparent;
   color: #60FDFF;
   position: relative;
-  border-radius: 20px;
-  text-shadow: 1px 1px 10px #FFFFFF;
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-shadow: 1px 1px 10px #FFFFFF;
   font-size: 50%;
   font-weight: bold;
   
