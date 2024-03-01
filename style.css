@@ -407,53 +407,6 @@ body{
 
 /*            Landing page.           */
 
-.landingpgt{
-  height: 50%;
-  width: 100%;
-  transform: translate(0%,0%);
-  transition: transform 1s;
-  background: #FF0077;
-  position: relative;
-  z-index: 4;
-}
-
-.hide_landingpgt{
-  transform: translate(0%,-100%);
-}
-
-.show_landingpgt{
-  transform: translate(0%,0%);
-}
-
-
-
-
-
-.landingpgb{
-  height: 50%;
-  width: 100%;
-  margin-top: ;
-  background: #0BFF04;
-  position: absolute;
-  z-index: 4;
-  transform: translate(0%,0%);
-  transition: transform 1s;
-}
-
-.hide_landingpgb{
-  transform: translate(0%,100%);
-}
-
-.show_landingpgb {
-  transform: translate(0%, 0%);
-}
-
-.ldnpg_off{
-  height: 50px;
-  width: 50px;
-  background: #37F1FF;
-  border-radius: 15px;
-}
 
 .footer{
   height: 20vh;

@@ -50,17 +50,6 @@ const g5 = document.getElementById('g5');
 
 //.        landing page.        👇👇
 
-const landingpgt = document.getElementById('landingpgt');
-const landingpgb = document.getElementById('landingpgb');
-const ldnpBtn = document.getElementById('ldnpg_off');
-
-
-ldnpg_off.addEventListener("click",function () {
-  
-  landingpgt.classList.toggle('hide_landingpgt');
-  landingpgb.classList.toggle('hide_landingpgb');
-    
-});
 
 
 //.        landing page.        👆👆
@@ -94,8 +83,7 @@ togglebtn.addEventListener("click",function () {
 
 homebtn.addEventListener("click",function () {
   
-  landingpgt.classList.remove('hide_landingpgt');
-  landingpgb.classList.remove('hide_landingpgb');
+  
   sidebar.classList.toggle('show_toggleoptn');
   tlogo.classList.toggle('togglelogos_show');
   options.classList.toggle('show_option')
